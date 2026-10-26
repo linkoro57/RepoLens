@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "repolens-cli"
+version = "1.0.0"
+description = "Analyze project structure, code statistics, and repository health."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "GPL-3.0-only" }
+authors = [{ name = "linkoro57" }]
+dependencies = []
+
+[project.scripts]
+repolens = "repolens.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["repolens*"]
